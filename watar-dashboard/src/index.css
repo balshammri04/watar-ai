@@ -1,0 +1,450 @@
+/* الصفحة */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #f5f7fa, #e4ecf7);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont;
+}
+
+/* الكرت */
+.login-card {
+  background: #ffffff;
+  width: 380px;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+/* العنوان */
+.login-card h1 {
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666;
+  margin-bottom: 24px;
+}
+
+/* الفورم */
+.login-card form {
+  display: flex;
+  flex-direction: column;
+}
+
+.login-card label {
+  font-size: 14px;
+  margin-bottom: 6px;
+  color: #444;
+}
+
+.login-card input {
+  padding: 12px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+.login-card input:focus {
+  outline: none;
+  border-color: #4f46e5;
+}
+
+/* زر الدخول */
+.login-card button {
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #4f46e5;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #4338ca;
+}
+
+/* الخطأ */
+.error {
+  color: #dc2626;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* Layout */
+.app-shell { display: grid; grid-template-columns: 260px 1fr; min-height: 100vh; background:#f6f8fb; }
+.sidebar { background: #0b1220; color:#fff; padding:18px; display:flex; flex-direction:column; gap:18px; }
+.main { padding:18px; }
+
+.brand { display:flex; gap:12px; align-items:center; }
+.brand-logo { width:42px; height:42px; border-radius:12px; background:#1b2a4a; display:flex; align-items:center; justify-content:center; }
+.brand-name { font-weight:700; }
+.brand-sub { font-size:12px; opacity:.7; margin-top:2px; }
+
+.menu { display:flex; flex-direction:column; gap:8px; margin-top:6px; }
+.menu-item { padding:10px 12px; border-radius:12px; color:#cfd7ea; text-decoration:none; font-size:14px; }
+.menu-item.active { background:#1b2a4a; color:#fff; }
+
+.sidebar-footer { margin-top:auto; display:flex; flex-direction:column; gap:12px; }
+.mini-user { display:flex; gap:10px; align-items:center; }
+.avatar { width:44px; height:44px; border-radius:50%; background:#1b2a4a; display:flex; align-items:center; justify-content:center; font-weight:700; }
+.avatar.sm { width:34px; height:34px; font-size:14px; }
+.mini-user-meta { display:flex; flex-direction:column; }
+.mini-user-name { font-weight:600; font-size:14px; }
+.mini-user-email { font-size:12px; opacity:.7; }
+
+.btn { border:none; cursor:pointer; border-radius:12px; padding:10px 12px; font-weight:600; }
+.btn-ghost { background:transparent; color:#fff; border:1px solid rgba(255,255,255,.15); }
+
+/* Topbar */
+.topbar { background:#fff; border:1px solid #eef1f6; border-radius:16px; padding:14px 16px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 12px 40px rgba(0,0,0,.05); }
+.page-title { margin:0; }
+.page-subtitle { margin:6px 0 0; color:#667085; font-size:13px; }
+
+.topbar-right { display:flex; gap:10px; align-items:center; }
+.icon-btn { width:40px; height:40px; border-radius:12px; background:#f3f6ff; display:flex; align-items:center; justify-content:center; border:1px solid #e6ecff; }
+
+/* Content */
+.content { margin-top:14px; }
+.cards { display:grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap:12px; }
+.card { background:#fff; border:1px solid #eef1f6; border-radius:16px; padding:14px; box-shadow:0 12px 40px rgba(0,0,0,.05); }
+.card-top { display:flex; gap:10px; align-items:center; }
+.card-icon { width:36px; height:36px; border-radius:12px; background:#f3f6ff; display:flex; align-items:center; justify-content:center; border:1px solid #e6ecff; }
+.card-label { color:#667085; font-size:13px; }
+.card-value { font-size:26px; font-weight:800; margin-top:10px; }
+
+.grid-2 { display:grid; grid-template-columns: 1.4fr 1fr; gap:12px; margin-top:12px; }
+.panel { background:#fff; border:1px solid #eef1f6; border-radius:16px; padding:14px; box-shadow:0 12px 40px rgba(0,0,0,.05); }
+.panel-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.badge { padding:6px 10px; border-radius:999px; background:#f3f6ff; border:1px solid #e6ecff; font-size:12px; }
+
+.table { width:100%; border-collapse:collapse; }
+.table th { text-align:left; font-size:12px; color:#667085; border-bottom:1px solid #eef1f6; padding:10px 8px; }
+.table td { border-bottom:1px solid #f3f4f6; padding:10px 8px; font-size:13px; }
+
+.list { display:flex; flex-direction:column; gap:10px; }
+.list-item { display:flex; align-items:center; gap:10px; padding:10px; border:1px solid #eef1f6; border-radius:14px; background:#fff; }
+.list-meta { flex:1; }
+.list-title { font-weight:700; }
+.list-sub { color:#667085; font-size:12px; margin-top:2px; }
+
+/* Pills */
+.pill { border:1px solid #e5e7eb; padding:6px 10px; border-radius:999px; font-size:12px; background:#fff; }
+.pill.success { border-color:#b7eb8f; }
+.pill.admin { border-color:#91caff; }
+.pill.staff { border-color:#d3adf7; }
+.pill.user { border-color:#ffd591; }
+.logs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.logs-table th,
+.logs-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.logs-table th {
+  color: #6b7280;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.logs-table td {
+  font-size: 14px;
+}
+
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status.success {
+  background: #e6f9ee;
+  color: #16a34a;
+}
+
+.status.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status-badge {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.status-badge.ok {
+  background: #e6f9f0;
+  color: #0f8a5f;
+}
+
+.status-badge.warning {
+  background: #fff4e5;
+  color: #c77700;
+}
+
+/* =======================
+   Dashboard Layout Fix
+======================= */
+
+.dashboard {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px; /* مسافة ثابتة بين sections */
+}
+
+/* Grid للكروت */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* System Health */
+.system-panel {
+  padding: 24px;
+}
+/* ===== Page Layout ===== */
+.team-members {
+  padding: 0;
+}
+
+/* ===== Header (زر الإضافة فقط) ===== */
+.team-members__header {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+
+/* ===== Create User Panel ===== */
+.team-members__create {
+  margin-bottom: 28px;
+}
+
+.team-members__create h4 {
+  margin-bottom: 14px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.team-members__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.team-members__actions {
+  margin-top: 16px;
+}
+
+/* ===== Table ===== */
+.team-members__table th,
+.team-members__table td {
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+.team-members__table th {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+/* ===== Role Pill ===== */
+.pill.staff {
+  background: #f3e8ff;
+  color: #7c3aed;
+}
+
+.pill.admin {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* ===== Delete Button ===== */
+.btn-delete {
+  background: #fff0f0;
+  color: #c0392b;
+  border: 1px solid #f5c2c2;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.btn-delete:hover {
+  background: #ffe5e5;
+}
+
+/* ===== Disabled Action ===== */
+.action-disabled {
+  opacity: 0.35;
+  font-size: 14px;
+}
+
+/* ===== Logs reuse Team Members styles ===== */
+
+.pill.create {
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.pill.delete {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.pill.login {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.pill.logout {
+  background: #f1f5f9;
+  color: #334155;
+}
+
+.pill.view {
+  background: #f5f3ff;
+  color: #6d28d9;
+}
+
+.pill.system {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.pill.success {
+  background: #e6f9ee;
+  color: #16a34a;
+}
+
+.pill.failed {
+  background: #fee2e2;
+  color: #dc2626;
+}
+/* Logs panel = نفس Team Members + scroll */
+.logs-panel {
+  max-height: 420px;        /* نص الصفحة تقريبًا */
+  overflow-y: auto;         /* ⬅️ هنا السكرول */
+}
+
+/* سكرول نظيف وهادئ */
+.logs-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.logs-panel::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 6px;
+}
+
+.logs-panel::-webkit-scrollbar-track {
+  background: transparent;
+}
+.logs-panel .table th,
+.logs-panel .table td {
+  font-size: 14px;
+  padding: 12px 14px;
+}
+/* Calls panel نفس Team Members */
+.calls-panel {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+/* نفس حجم الخط */
+.calls-panel .table th {
+  font-size: 12px;
+  color: #667085;
+  padding: 12px 14px;
+}
+
+.calls-panel .table td {
+  font-size: 13px;
+  padding: 12px 14px;
+}
+
+/* Call SID mono زي Twilio */
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 12px;
+  color: #2563eb;
+}
+
+/* Scroll ناعم */
+.calls-panel::-webkit-scrollbar {
+  width: 8px;
+}
+
+.calls-panel::-webkit-scrollbar-thumb {
+  background: #d1d5db;
+  border-radius: 6px;
+}
+.mono {
+  font-family: ui-monospace, SFMono-Regular, Menlo;
+  font-size: 13px;
+}
+
+.link {
+  color: #2563eb;
+  cursor: pointer;
+}
+
+.icon-btn {
+  background: #f3f6ff;
+  border: 1px solid #e6ecff;
+  border-radius: 10px;
+  padding: 6px 10px;
+}
+.calls-panel {
+  max-height: 520px;
+  overflow-y: auto;
+}
+
+.calls-panel .table th,
+.calls-panel .table td {
+  padding: 12px 14px;
+  font-size: 14px;
+}
+.panel {
+  max-height: 520px;
+  overflow-y: auto;
+}
+/* =========================
+   Appointment Status Pills
+========================= */
+
+.pill.scheduled {
+  background: #ecfdf5 !important;
+  color: #059669 !important;
+  border: 1px solid #a7f3d0 !important;
+}
+
+.pill.cancelled {
+  background: #fef2f2 !important;
+  color: #dc2626 !important;
+  border: 1px solid #fecaca !important;
+}
+
+.pill.rescheduled {
+  background: #fff7ed !important;
+  color: #c2410c !important;
+  border: 1px solid #fed7aa !important;
+}
